@@ -692,6 +692,7 @@ GameObject:
   - component: {fileID: 710394442}
   - component: {fileID: 710394441}
   - component: {fileID: 710394440}
+  - component: {fileID: 710394443}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -722,7 +723,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 710394438}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -774,6 +775,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710394438}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &710394443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710394438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 2, z: 0.7}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &716991668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6279068960261158593, guid: f1b58c3b5d62444fe923ffe6377a9884,
@@ -864,7 +878,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921268198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 710394439}
@@ -1535,7 +1549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000011188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1693451685}
@@ -1655,13 +1669,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3944951350404304174, guid: 2106a2a366bfb4dadaf30d932d168800,
         type: 3}
+      propertyPath: type
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951350404304174, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
       propertyPath: useMouse
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3944951350404304174, guid: 2106a2a366bfb4dadaf30d932d168800,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3944951350404304174, guid: 2106a2a366bfb4dadaf30d932d168800,
         type: 3}
