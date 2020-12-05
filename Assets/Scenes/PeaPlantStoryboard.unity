@@ -1382,9 +1382,8 @@ GameObject:
   - component: {fileID: 1693451689}
   - component: {fileID: 1693451688}
   - component: {fileID: 1693451687}
-  - component: {fileID: 1693451686}
-  - component: {fileID: 1693451690}
   - component: {fileID: 1693451691}
+  - component: {fileID: 1693451686}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -1413,7 +1412,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693451684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 161b4502da8b245aba33cec40eea4a71, type: 3}
   m_Name: 
@@ -1421,8 +1420,8 @@ MonoBehaviour:
   minDistance: 1000000
   debug: 0
   type: 
-  hoverTime: 1
-  moveTowardGrabberSpeed: 1
+  hoverTime: 0.1
+  moveTowardGrabberSpeed: 10
   stopGrabbingDistance: 0.25
 --- !u!135 &1693451687
 SphereCollider:
@@ -1484,31 +1483,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693451684}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1693451690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1693451684}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 962265286fcd7410aa535e02c628aeee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minDistance: 1000000
-  debug: 1
-  type: 
-  hoverTime: 0.01
-  target: {fileID: 1693451684}
-  position: {x: 0, y: 0, z: 0}
-  scale: {x: 1.5, y: 1.5, z: 1.5}
-  rotation: {x: 0, y: 0, z: 0}
-  triggerOnFinish: []
-  triggerOnStart: []
-  swap: 1
-  speed: 0
-  trigger: 0
 --- !u!54 &1693451691
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1534,6 +1508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2000011189}
+  - component: {fileID: 2000011190}
   m_Layer: 0
   m_Name: PeaSeed
   m_TagString: Untagged
@@ -1556,6 +1531,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2000011190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000011188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161b4502da8b245aba33cec40eea4a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 1000000
+  debug: 0
+  type: 
+  hoverTime: 1
+  moveTowardGrabberSpeed: 5
+  stopGrabbingDistance: 0.5
 --- !u!1 &2109236336 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6279068960261158618, guid: f1b58c3b5d62444fe923ffe6377a9884,
