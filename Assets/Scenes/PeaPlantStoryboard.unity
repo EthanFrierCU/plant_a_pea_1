@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b61dbb5d6e8f47f8bc9a1aacd5846d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pea: {fileID: 0}
+  pea: {fileID: 1693451691}
 --- !u!135 &396131608
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -403,7 +403,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.25
+  m_Radius: 0.37836063
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &396131609
 Rigidbody:
@@ -1447,7 +1447,7 @@ GameObject:
   - component: {fileID: 1693451686}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: PeaSeed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1571,7 +1571,7 @@ GameObject:
   - component: {fileID: 2000011189}
   m_Layer: 0
   m_Name: PeaSeed
-  m_TagString: Untagged
+  m_TagString: PeaSeed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
