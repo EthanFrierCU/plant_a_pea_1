@@ -391,6 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pea: {fileID: 1693451691}
+  speed: 1
 --- !u!135 &396131608
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -402,7 +403,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.37836063
+  m_Radius: 0.35
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &454358473
 PrefabInstance:
@@ -1528,6 +1529,7 @@ MonoBehaviour:
   hoverTime: 1
   moveTowardGrabberSpeed: 2
   stopGrabbingDistance: 0.5
+  debugText: {fileID: 0}
 --- !u!54 &1693451691
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1551,7 +1553,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693451684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70369c162b0784411a532ed5036175c7, type: 3}
   m_Name: 
@@ -1738,6 +1740,16 @@ PrefabInstance:
         type: 3}
       propertyPath: alwaysActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951350404304174, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: layers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951350404304174, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: layers.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3944951350404304175, guid: 2106a2a366bfb4dadaf30d932d168800,
         type: 3}

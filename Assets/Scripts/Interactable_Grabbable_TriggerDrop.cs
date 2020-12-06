@@ -65,9 +65,10 @@ namespace CUVR{
                 grab = true;
             }
         }
-        // void OnTriggerEnter(Collider col)
-        // {
-        //     this.transform.parent = null;
-        // }
+        
+        void OnTriggerEnter(Collider col)
+        {
+            this.transform.parent = null;
+        }
     }
 }
