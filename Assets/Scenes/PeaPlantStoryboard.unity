@@ -390,7 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b61dbb5d6e8f47f8bc9a1aacd5846d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pea: {fileID: 1693451691}
+  pea: {fileID: 1693451685}
   speed: 1
 --- !u!135 &396131608
 SphereCollider:
@@ -1524,12 +1524,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDistance: 1000000
-  debug: 0
+  debug: 1
   type: grabbing
   hoverTime: 1
   moveTowardGrabberSpeed: 2
   stopGrabbingDistance: 0.5
-  debugText: {fileID: 0}
+  debugGrab: {fileID: 1837558820}
+  debugHover: {fileID: 1837558820}
 --- !u!54 &1693451691
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1564,6 +1565,12 @@ MonoBehaviour:
   hoverTime: 1
   moveTowardGrabberSpeed: 2
   stopGrabbingDistance: 0.5
+--- !u!102 &1837558820 stripped
+TextMesh:
+  m_CorrespondingSourceObject: {fileID: 3944951351385689824, guid: 2106a2a366bfb4dadaf30d932d168800,
+    type: 3}
+  m_PrefabInstance: {fileID: 3944951351686349165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2000011188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1805,6 +1812,36 @@ PrefabInstance:
         type: 3}
       propertyPath: scale.y
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951351385689824, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951351385689824, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: m_Anchor
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951351385689824, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: m_Alignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951351385689825, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951351385689826, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944951351385689827, guid: 2106a2a366bfb4dadaf30d932d168800,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6677398703137904921, guid: 2106a2a366bfb4dadaf30d932d168800,
         type: 3}
