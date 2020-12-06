@@ -19,13 +19,13 @@ public class Forcefield_Attract : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        other.transform.gameObject.GetComponent<Interactable>().enabled = false;
         if (other.CompareTag("PeaSeed"))
         {
+            other.transform.gameObject.GetComponent<Interactable>().enabled = false;
             other.transform.parent = null;
             other.transform.parent = this.transform;
-            inForcefield = true;
             pea = other.transform;
+            inForcefield = true;
         }
     }
 
