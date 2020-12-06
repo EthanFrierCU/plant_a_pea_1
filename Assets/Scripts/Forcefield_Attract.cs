@@ -14,15 +14,18 @@ public class Forcefield_Attract : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "PeaSeed")
+       if(other.CompareTag("PeaSeed"))
         {
-            other.transform.SetParent(null);
+            other.transform.parent = null;
         }
     }
 
     void OnTriggerStay(Collider other)
     {
-        //PeaSeed moves towards center uning rigidbody moveposition
+        if(other.CompareTag("PeaSeed"))
+        {
+            other.transform.parent = this.transform;
+        }
     }
     
 }
