@@ -150,7 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a766a641f4349e083e3895c569ae06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 1
   storyTime: 0
+  activeModel: 
   naturalTimeMode: 1
   controlTimeMode: 0
   seedInPlace: {fileID: 396131607}
@@ -161,6 +163,7 @@ MonoBehaviour:
   Model3: {fileID: 1162577736}
   Model4: {fileID: 885472996}
   Model5: {fileID: 133535653}
+  debugModels: {fileID: 1837558820}
 --- !u!4 &48158203
 Transform:
   m_ObjectHideFlags: 0
@@ -543,9 +546,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b61dbb5d6e8f47f8bc9a1aacd5846d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debug: 1
   pea: {fileID: 1693451685}
   speed: 0.5
-  storyStart: 1
+  storyStart: 0
+  debugModels: {fileID: 1837558820}
 --- !u!135 &396131608
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -557,7 +562,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.35
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &439757688
 GameObject:
@@ -2049,7 +2054,7 @@ GameObject:
   - component: {fileID: 1693451691}
   - component: {fileID: 1693451690}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Seed
   m_TagString: PeaSeed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2180,7 +2185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000011189}
   m_Layer: 0
-  m_Name: PeaPlant
+  m_Name: PeaSeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2194,7 +2199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000011188}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.7}
+  m_LocalPosition: {x: -0.455, y: -0.234, z: 0.544}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1693451685}

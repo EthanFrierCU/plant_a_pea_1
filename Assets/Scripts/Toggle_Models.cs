@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Toggle_Models : MonoBehaviour
 {
-
+    public bool debug;
     public float storyTime = 0f;
+    public string activeModel;
     public bool naturalTimeMode;
     public bool controlTimeMode;
     public Forcefield_Attract seedInPlace;
@@ -16,6 +18,8 @@ public class Toggle_Models : MonoBehaviour
     public GameObject Model3;
     public GameObject Model4;
     public GameObject Model5;
+    public TextMesh debugModels;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +30,11 @@ public class Toggle_Models : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(debug)
+        {
+            Debug.Log(activeModel);
+            debugModels.text = activeModel;
+        }
 
         if(seedInPlace.storyStart)
         {
@@ -51,6 +60,7 @@ public class Toggle_Models : MonoBehaviour
             if (!Model0.activeInHierarchy)
             {
                 Model0.SetActive(true);
+                activeModel = "Model 0";
             }
         }
 
@@ -60,6 +70,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model0.SetActive(false);
                 Model1.SetActive(true);
+                activeModel = "Model 1";
             }
         }
 
@@ -69,6 +80,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model1.SetActive(false);
                 Model2.SetActive(true);
+                activeModel = "Model 2";
             }
         }
 
@@ -78,6 +90,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model2.SetActive(false);
                 Model3.SetActive(true);
+                activeModel = "Model 3";
             }
         }
 
@@ -87,6 +100,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model3.SetActive(false);
                 Model4.SetActive(true);
+                activeModel = "Model 4";
             }
         }
 
@@ -96,6 +110,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model4.SetActive(false);
                 Model5.SetActive(true);
+                activeModel = "Model 5";
             }
         }
 

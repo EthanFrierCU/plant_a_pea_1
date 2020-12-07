@@ -5,11 +5,13 @@ using CUVR;
 
 public class Forcefield_Attract : MonoBehaviour
 {
+    public bool debug;
     public Transform pea;
     public float speed = 1;
     Vector3 targetPosition;
     bool inForcefield;
     public bool storyStart;
+    public TextMesh debugModels;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +44,16 @@ public class Forcefield_Attract : MonoBehaviour
             {
                 inForcefield = false;
                 storyStart = true;
+                if (debug)
+                {
+                    Debug.Log("planted");
+                    debugModels.text = "planted";
+                }
+            }
+            if(debug)
+            {
+                Debug.Log("planting");
+                debugModels.text = "planting";
             }
         }
 
