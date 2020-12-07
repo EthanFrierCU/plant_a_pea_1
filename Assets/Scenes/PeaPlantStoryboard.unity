@@ -150,6 +150,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a766a641f4349e083e3895c569ae06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  storyTime: 0
+  Model0: {fileID: 1242446104}
+  Model1: {fileID: 783784216}
+  Model2: {fileID: 439757688}
+  Model3: {fileID: 1162577736}
+  Model4: {fileID: 885472996}
+  Model5: {fileID: 133535653}
 --- !u!4 &48158203
 Transform:
   m_ObjectHideFlags: 0
