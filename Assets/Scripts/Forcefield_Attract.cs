@@ -9,12 +9,14 @@ public class Forcefield_Attract : MonoBehaviour
     public float speed = 1;
     Vector3 targetPosition;
     bool inForcefield;
+    public bool storyStart;
 
     // Start is called before the first frame update
     void Start()
     {
         targetPosition = new Vector3(0f, -0.5f, 1f);
         inForcefield = false;
+        storyStart = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -39,6 +41,7 @@ public class Forcefield_Attract : MonoBehaviour
             if (Vector3.Distance(pea.transform.position, targetPosition) < 0.001f)
             {
                 inForcefield = false;
+                storyStart = true;
             }
         }
 

@@ -6,6 +6,10 @@ public class Toggle_Models : MonoBehaviour
 {
 
     public float storyTime = 0f;
+    public bool naturalTimeMode;
+    public bool controlTimeMode;
+    public Forcefield_Attract seedInPlace;
+    public GameObject Seed;
     public GameObject Model0;
     public GameObject Model1;
     public GameObject Model2;
@@ -16,23 +20,41 @@ public class Toggle_Models : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        naturalTimeMode = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        storyTime += Time.deltaTime;
 
-        if (storyTime>0 & storyTime<1)
-        { 
+        if(seedInPlace.storyStart)
+        {
+            if(Seed.activeInHierarchy)
+            {
+                Seed.SetActive(false);
+            }
+
+            if(naturalTimeMode)
+            {
+                storyTime += Time.deltaTime;
+            }
+
+            StoryBoard();
+        }
+
+    }
+
+    void StoryBoard()
+    {
+        if (storyTime > 0 & storyTime < 1)
+        {
             if (!Model0.activeInHierarchy)
             {
                 Model0.SetActive(true);
             }
         }
 
-        if (storyTime>=1 & storyTime<2)
+        if (storyTime >= 1 & storyTime < 2)
         {
             if (!Model1.activeInHierarchy)
             {
@@ -77,12 +99,5 @@ public class Toggle_Models : MonoBehaviour
             }
         }
 
-        if (storyTime >= 6)
-        {
-            if (!Model5.activeInHierarchy)
-            {
-                Model5.SetActive(true);
-            }
-        }
     }
 }
