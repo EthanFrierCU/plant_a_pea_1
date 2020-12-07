@@ -44,12 +44,8 @@ public class Forcefield_Attract : MonoBehaviour
             {
                 inForcefield = false;
                 storyStart = true;
-                if (debug)
-                {
-                    Debug.Log("planted");
-                    debugModels.text = "planted";
-                }
             }
+
             if(debug)
             {
                 Debug.Log("planting");

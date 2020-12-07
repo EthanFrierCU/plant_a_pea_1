@@ -60,7 +60,7 @@ public class Toggle_Models : MonoBehaviour
             if (!Model0.activeInHierarchy)
             {
                 Model0.SetActive(true);
-                activeModel = "Model 0";
+                activeModel = "seed planted";
             }
         }
 
@@ -70,7 +70,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model0.SetActive(false);
                 Model1.SetActive(true);
-                activeModel = "Model 1";
+                activeModel = "germinating";
             }
         }
 
@@ -80,7 +80,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model1.SetActive(false);
                 Model2.SetActive(true);
-                activeModel = "Model 2";
+                activeModel = "root grows";
             }
         }
 
@@ -90,7 +90,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model2.SetActive(false);
                 Model3.SetActive(true);
-                activeModel = "Model 3";
+                activeModel = "shoot grows";
             }
         }
 
@@ -100,7 +100,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model3.SetActive(false);
                 Model4.SetActive(true);
-                activeModel = "Model 4";
+                activeModel = "first leaf";
             }
         }
 
@@ -110,7 +110,7 @@ public class Toggle_Models : MonoBehaviour
             {
                 Model4.SetActive(false);
                 Model5.SetActive(true);
-                activeModel = "Model 5";
+                activeModel = "what's next?";
             }
         }
 
