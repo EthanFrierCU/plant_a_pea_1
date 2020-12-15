@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - PeaSeed
+  - ground
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,7 @@ using CUVR;
 public class Forcefield_Attract : MonoBehaviour
 {
     public bool debug;
-    public Transform pea;
+    public Transform seed;
     public float speed = 1;
     Vector3 targetPosition;
     bool inForcefield;
@@ -28,7 +28,7 @@ public class Forcefield_Attract : MonoBehaviour
             other.transform.gameObject.GetComponent<Interactable>().enabled = false;
             other.transform.parent = null;
             other.transform.parent = this.transform;
-            pea = other.transform;
+            seed = other.transform;
             inForcefield = true;
         }
     }
@@ -38,9 +38,9 @@ public class Forcefield_Attract : MonoBehaviour
         if (inForcefield)
         {
             float step = speed * Time.deltaTime;
-            pea.transform.position = Vector3.MoveTowards(pea.transform.position, targetPosition, step);
+            seed.transform.position = Vector3.MoveTowards(seed.transform.position, targetPosition, step);
 
-            if (Vector3.Distance(pea.transform.position, targetPosition) < 0.001f)
+            if (Vector3.Distance(seed.transform.position, targetPosition) < 0.001f)
             {
                 inForcefield = false;
                 storyStart = true;
